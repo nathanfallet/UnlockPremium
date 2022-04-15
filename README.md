@@ -80,8 +80,7 @@ val config = UnlockPremiumConfig(
         "A feature description",
         R.drawable.ic_baseline_apps_24
     )),
-    "myAppSKU.premiumPurchase",
-    introMode
+    "myAppSKU.premiumPurchase"
 )
 ```
 
