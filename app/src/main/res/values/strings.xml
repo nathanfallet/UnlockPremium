@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UnlockPremiumSample</string>
+    <string name="button1">UnlockPremium</string>
+    <string name="button2">UnlockPremium\n(introMode=true)</string>
+</resources>

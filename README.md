@@ -64,9 +64,9 @@ The `completionHandler` is the method called when the purchase completes success
 Then, show the view where you want:
 
 ```swift
-.sheet(isPresented: $viewModel.showPremium, content: {
+.sheet(isPresented: $viewModel.showPremium) {
     UnlockPremiumView(configuration: .config(), isPresented: $viewModel.showPremium)
-})
+}
 ```
 
 ### Android
@@ -74,13 +74,34 @@ Then, show the view where you want:
 Setup a configuration for the unlock view:
 
 ```kotlin
-// TODO
+val config = UnlockPremiumConfig(
+    listOf(PremiumArgument(
+        "A feature name",
+        "A feature description",
+        R.drawable.ic_baseline_apps_24
+    )),
+    "myAppSKU.premiumPurchase",
+    introMode
+)
 ```
 
-The `completionHandler` is the method called when the purchase completes successfully.
+Create a request, and handle the response
+
+```kotlin
+private val unlockPremiumRequest = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { it ->
+    it.data?.getBooleanExtra(UnlockPremiumActivity.EXTRAS.SUCCESS, false)?.let { success ->
+        if (success) {
+            // Set your user as premium, for example:
+            UserService.getInstance(getApplication()).setUserPremium(true)
+        }
+    }
+}
+```
 
 Then, show the view where you want:
 
 ```kotlin
-// TODO
+val intent = Intent(this, UnlockPremiumActivity::class.java)
+intent.putExtra(UnlockPremiumActivity.EXTRAS.CONFIGURATION, config)
+unlockPremiumRequest.launch(intent)
 ```
