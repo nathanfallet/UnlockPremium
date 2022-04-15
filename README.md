@@ -44,7 +44,7 @@ extension UnlockPremiumConfig {
                 PremiumArgument(
                     title: "A feature name",
                     description: "A feature description",
-                    icon: "app..fill"
+                    icon: "app.fill"
                 ),
                 // ...
             ],
