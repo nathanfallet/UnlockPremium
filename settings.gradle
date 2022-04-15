@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "UnlockPremiumSample"
+rootProject.name = "UnlockPremium"
 include ':app'
 include ':UnlockPremium'
