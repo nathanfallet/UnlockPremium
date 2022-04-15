@@ -30,4 +30,19 @@ public struct PremiumArgument: Codable, Equatable {
     /// Name of a SF Symbol shown in the unlock view
     public var icon: String
     
+    /// Create a premium argument
+    /// - Parameters:
+    ///   - title: Title shown in the unlock view
+    ///   - description: Description shown in the unlock view
+    ///   - icon: Name of a SF Symbol shown in the unlock view
+    public init(
+        title: String,
+        description: String,
+        icon: String
+    ) {
+        self.title = title
+        self.description = description
+        self.icon = icon
+    }
+    
 }

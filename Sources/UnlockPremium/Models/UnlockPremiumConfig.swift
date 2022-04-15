@@ -28,12 +28,33 @@ public struct UnlockPremiumConfig {
     public var productIdentifier: String
     
     /// If the view should be shown in Intro mode
-    public var introMode: Bool = false
+    public var introMode: Bool
     
     /// Custom action called when the view appears
-    public var onAppear: () -> Void = {}
+    public var onAppear: () -> Void
     
     /// Completion handler when the purchase successes
     public var completionHandler: () -> Void
+    
+    /// Create a configuration for unlock view
+    /// - Parameters:
+    ///   - arguments: Arguments shown in the unlock view
+    ///   - productIdentifier: Product identifier of the premium purchase
+    ///   - introMode: If the view should be shown in Intro mode (defaults to false)
+    ///   - onAppear: Custom action called when the view appears (optional)
+    ///   - completionHandler: Completion handler when the purchase successes
+    public init(
+        arguments: [PremiumArgument],
+        productIdentifier: String,
+        introMode: Bool = false,
+        onAppear: @escaping () -> Void = {},
+        completionHandler: @escaping () -> Void
+    ) {
+        self.arguments = arguments
+        self.productIdentifier = productIdentifier
+        self.introMode = introMode
+        self.onAppear = onAppear
+        self.completionHandler = completionHandler
+    }
     
 }
