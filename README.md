@@ -75,11 +75,14 @@ Setup a configuration for the unlock view:
 
 ```kotlin
 val config = UnlockPremiumConfig(
-    listOf(PremiumArgument(
-        "A feature name",
-        "A feature description",
-        R.drawable.ic_baseline_apps_24
-    )),
+    listOf(
+        PremiumArgument(
+            "A feature name",
+            "A feature description",
+            R.drawable.ic_baseline_apps_24
+        ),
+        // ...
+    ),
     "myAppSKU.premiumPurchase"
 )
 ```
