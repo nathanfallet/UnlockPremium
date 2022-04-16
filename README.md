@@ -4,6 +4,7 @@
 [![Issues](https://img.shields.io/github/issues/GroupeMINASTE/UnlockPremium)]()
 [![Pull Requests](https://img.shields.io/github/issues-pr/GroupeMINASTE/UnlockPremium)]()
 [![Code Size](https://img.shields.io/github/languages/code-size/GroupeMINASTE/UnlockPremium)]()
+[![Translation status](http://weblate.groupe-minaste.org/widgets/unlockpremium/-/svg-badge.svg)](http://weblate.groupe-minaste.org/engage/unlockpremium/?utm_source=widget)
 
 ## Installation
 
