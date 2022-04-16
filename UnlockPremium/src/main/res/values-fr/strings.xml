@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_unlock">Débloquer le premium</string>
+    <string name="premium_unlock_intro">Essayer le premium ?</string>
+    <string name="premium_restore">Restorer mes achats</string>
+    <string name="premium_no_thanks">Non merci</string>
+</resources>
