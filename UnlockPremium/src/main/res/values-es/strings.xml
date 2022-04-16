@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="premium_restore">Restablecer las compras</string>
+    <string name="premium_no_thanks">No, gracias</string>
+    <string name="premium_unlock">Desbloquear el prémium</string>
+    <string name="premium_unlock_intro">¿Intentar el prémium\?</string>
+</resources>
