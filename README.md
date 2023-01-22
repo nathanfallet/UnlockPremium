@@ -1,16 +1,16 @@
 # UnlockPremium
 
-[![License](https://img.shields.io/github/license/GroupeMINASTE/UnlockPremium)](LICENSE)
-[![Issues](https://img.shields.io/github/issues/GroupeMINASTE/UnlockPremium)]()
-[![Pull Requests](https://img.shields.io/github/issues-pr/GroupeMINASTE/UnlockPremium)]()
-[![Code Size](https://img.shields.io/github/languages/code-size/GroupeMINASTE/UnlockPremium)]()
+[![License](https://img.shields.io/github/license/NathanFallet/UnlockPremium)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/NathanFallet/UnlockPremium)]()
+[![Pull Requests](https://img.shields.io/github/issues-pr/NathanFallet/UnlockPremium)]()
+[![Code Size](https://img.shields.io/github/languages/code-size/NathanFallet/UnlockPremium)]()
 [![Translation status](http://weblate.groupe-minaste.org/widgets/unlockpremium/-/svg-badge.svg)](http://weblate.groupe-minaste.org/engage/unlockpremium/?utm_source=widget)
 
 ## Installation
 
 ### iOS
 
-Add `https://github.com/GroupeMINASTE/UnlockPremium.git` to your Swift Package configuration (or using the Xcode menu: `File` > `Swift Packages` > `Add Package Dependency`)
+Add `https://github.com/NathanFallet/UnlockPremium.git` to your Swift Package configuration (or using the Xcode menu: `File` > `Swift Packages` > `Add Package Dependency`)
 
 Don't forget to add the `In-App Purchase` capability to your app (in `Signing & Capabilities`). This should automatically add the `StoreKit` framework to your app as well.
 
