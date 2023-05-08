@@ -92,14 +92,26 @@ public struct UnlockPremiumView: View {
             .navigationTitle(Text(LocalizedStringKey(
                 viewModel.configuration.introMode ? "premium_unlock_intro" : "premium_unlock"
             ), bundle: .module))
+            .toolbar {
+                ToolbarItemGroup(placement: .cancellationAction) {
+                    Button(
+                        action: {
+                            isPresented = false
+                        },
+                        label: {
+                            Text(LocalizedStringKey("cancel"), bundle: .module)
+                        }
+                    )
+                }
+            }
             .onAppear(perform: viewModel.onAppear)
-            .alert(isPresented: $viewModel.paymentFailed, content: {
+            .alert(isPresented: $viewModel.paymentFailed) {
                 Alert(
                     title: Text(LocalizedStringKey("error"), bundle: .module),
                     message: nil,
                     dismissButton: .default(Text(LocalizedStringKey("ok"), bundle: .module))
                 )
-            })
+            }
             .onChange(of: viewModel.paymentSucceeded) { _ in
                 if viewModel.paymentSucceeded {
                     isPresented = false
